@@ -1,11 +1,23 @@
 # ASSESSMENT 5: Ruby Coding Practical Questions
 
 # --------------------1) Create a class called Bike that is initialized with a model, wheels, and a frame size. The default number of wheels is 2. Create a get_info method that returns a sentence with all the data about each bike object.
+class Bike 
+    def set_model model 
+        @model = model
+    end
 
+    def get_wheels
+        @wheels = "All bikes have 2 wheels"
+    end
 
-
-
-
+    def frame_size
+        @size = size
+    end
+end
+bike = Bike.new
+bike.set_model "hella fast"
+bike.frame_size "really big"
+p bike
 # Expected output example: 'The Trek bike has 2 wheels and a 168cm frame.'
 
 
